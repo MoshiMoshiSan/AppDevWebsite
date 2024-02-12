@@ -81,11 +81,11 @@ body {
 
 .glow-text:hover {
     text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
 }
 
 .glow-text:hover::after {
-    content: '';
+    content: ' ';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -116,17 +116,12 @@ body {
 
 /* Start progress bar */
 #progress-bar-container {
+    display: block;
+    flex-direction: column;
     position: relative;
-    width: 90%;
-    margin: auto;
+    width: 85%;
     height: 100px;
     margin-top: 35px;
-}
-
-@media (max-width: 710px) {
-    #progress-bar-container {
-        margin-top: 10px;
-    }
 }
 
 #progress-bar-container ul {
@@ -252,7 +247,9 @@ body {
 }
 
 #progress-content-section {
-	width:95%;
+    display: block;
+    position: relative;
+	width:85%;
 	margin: auto;
 	background: transparent;
 	border-radius: 10px;
@@ -275,7 +272,7 @@ body {
 
 @media (max-width: 990px) {
     #progress-content-section .section-content h2 {
-        font-size:40px;
+        font-size:34px;
     }
 }
 
@@ -293,7 +290,7 @@ body {
 
 @media (max-width: 990px) {
     #progress-content-section .section-content h1 {
-      font-size: 25px;
+      font-size: 22px;
     }
 }
 
