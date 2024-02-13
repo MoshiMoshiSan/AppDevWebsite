@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body class="m-0">
+<body class="mainBackground m-0">
     <div id="navBar" class="flex fixed z-[9999] w-full h-20 px-6 bg-neutral-900 shadow-2xl items-center justify-center sm:justify-start transition-all ease-in-out duration-300">
         <img id="logo" src="../Assets/Icon.png" alt="Icon" class="h-1/2 mr-4 hover:scale-110">
         <h1 class="text-2xl text-white font-['Rubik'] tracking-widest hidden sm:block">THE HISTORY OF VIDEOGRAPHY</h1>
@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <div id="QuoteBox" class="scroll quoteBox h-52 top-20 items-center bg-neutral-900" style="--t:30s">
+    <div id="QuoteBox" class="scroll quoteBox h-52 top-20 items-center bg-neutral-900" style="--t:50s">
         <div>
             <img src="../Assets/Rolling.gif" alt="Rolling">
             <img src="../Assets/Casablanca.gif" alt="Casablanca">
@@ -98,11 +98,11 @@
         </div>
     </div>
 
-    <div id="timelineHeader" class="flex relative top-20 w-full min-h-24 tmHead:min-h-36 items-center px-5 justify-center transition-all duration-300 ease-in-out">
+    <div id="timelineHeader" class="flex relative top-20 w-full min-h-24 tmHead:min-h-36 items-center px-5 justify-center transition-all duration-700 ease-in-out">
         <h1 class="text-[#aaa] text-[35px] tmHead:text-[50px] text-center transition-all duration-300 ease-in-out">The Progression of Videography</h1>
     </div>
 
-    <div class="flex relative top-20 mt-16 w-full justify-center">
+    <div class="flex relative top-20 mt-16w-full justify-center">
         <div id="progress-bar-container">
             <ul>
                 <li class="step step01 active"><div class="step-inner">1880s</div></li>
@@ -207,6 +207,14 @@
         </div>
     </div>
 
+    <div id="spacer1" class="mainBackground flex relative top-20 w-full h-20"></div>
+
+    <div id="Shadow3" class="stripShadowReverse flex relative top-20 w-full h-20"></div>
+
+    <div id="figuresHeader" class="flex relative top-20 w-full h-96 items-center justify-center">
+        <h1 class="text-red-600 text-8xl">KEY FIGURES</h1>
+    </div>
+
     <!-- script -->
     <script>
         let prevScrollPos = window.pageYOffset;
@@ -216,7 +224,7 @@
             if (prevScrollPos > currentScrollPos) {
                 document.getElementById("navBar").style.transform = "translateY(0)";
             } else {
-                document.getElementById("navBar").style.transform = "translateY(-150px)"; // Adjust this value based on your navbar height
+                document.getElementById("navBar").style.transform = "translateY(-150px)";
             }
             prevScrollPos = currentScrollPos;
         };

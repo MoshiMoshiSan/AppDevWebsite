@@ -1,4 +1,4 @@
-body {
+.mainBackground {
     background: #1D1D1D;
 }
 
@@ -252,7 +252,7 @@ body {
 	width:85%;
 	margin: auto;
 	background: transparent;
-	border-radius: 10px;
+	border-radius: 45px;
     border: #aaa solid 3px;
 }
 
@@ -277,11 +277,13 @@ body {
 }
 
 #progress-content-section .section-content h1 {
-    font-family:Helvetica;
+    font-family:'Courier New';
     text-decoration: underline;
     text-underline-offset: 8px;
-	font-size:40px;
-    font-weight: 700;
+    text-decoration-thickness: 2px;
+	font-size: 40px;
+    font-weight: 550;
+    letter-spacing: 2px;
 	text-transform:uppercase;
 	color:#dbdbdb;
     margin-bottom: 20px;
@@ -330,4 +332,19 @@ body {
 		transform:translateY(0px);
 		opacity:1;
 	}
+}
+
+/* Key Figures */
+.stripShadowReverse {
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0.00) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+#figuresHeader {
+    background-image: url(../Assets/People\ Header.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#figuresHeader h1 {
+    font-family: 'Akira Expanded Demo';
 }

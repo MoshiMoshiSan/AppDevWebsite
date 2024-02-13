@@ -632,6 +632,11 @@ video {
   height: 13rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+
 .min-h-24 {
   min-height: 6rem;
 }
@@ -845,5 +850,27 @@ video {
 
   .tmHead\:text-\[50px\] {
     font-size: 50px;
+  }
+}
+
+@layer utilities {
+  .object-contain {
+    object-fit: contain;
+  }
+
+  .object-cover {
+    object-fit: cover;
+  }
+
+  .object-fill {
+    object-fit: fill;
+  }
+
+  .object-none {
+    object-fit: none;
+  }
+
+  .object-scale-down {
+    object-fit: scale-down;
   }
 }
