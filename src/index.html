@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./fonts.css">
 </head>
 
 <body class="mainBackground m-0">
@@ -80,8 +81,8 @@
 
     <div id="Shadow1" class="stripShadow hidden relative top-20 w-full h-20 sm:block">
         <div id="tabBar" class="inline-flex w-full h-16 px-2 items-center justify-around">
-            <h6 class="glow-text">Timeline</h6>
-            <h6 class="glow-text">Key Figures</h6>
+            <h6 class="glow-text" onclick="scrollToSection('timelineHeader')">Timeline</h6>
+            <h6 class="glow-text" onclick="scrollToSection('Shadow3')">Key Figures</h6>
             <h6 class="glow-text">Technology</h6>
             <h6 class="glow-text">Gallery</h6>
             <h6 class="glow-text">Summary</h6>
@@ -90,8 +91,8 @@
 
     <div id="Shadow2" class="stripShadow flex relative top-20 w-full h-20 sm:hidden">
         <div id="tabBarIcons" class="inline-flex w-full h-16 px-2 items-center justify-around">
-            <img class="hover:scale-125" src="../Assets/Clock.png" alt="Clock">
-            <img class="hover:scale-125" src="../Assets/Person.png" alt="Person">
+            <img class="hover:scale-125" src="../Assets/Clock.png" alt="Clock" onclick="scrollToSection('timelineHeader')">
+            <img class="hover:scale-125" src="../Assets/Person.png" alt="Person" onclick="scrollToSection('Shadow3')">
             <img class="hover:scale-125" src="../Assets/Camera.png" alt="Camera">
             <img class="hover:scale-125" src="../Assets/Image.png" alt="Image">
             <img class="hover:scale-125" src="../Assets/Paper.png" alt="Paper">
@@ -124,7 +125,7 @@
         </div>
     </div>
 
-    <div class="flex relative top-20 mt-16 w-full justify-center">
+    <div class="flex relative top-20 w-full justify-center mb-10">
         <div id="progress-content-section">
             <div class="section-content 1880s">
                 <h2>- 1880s -</h2>
@@ -207,17 +208,77 @@
         </div>
     </div>
 
-    <div id="spacer1" class="mainBackground flex relative top-20 w-full h-20"></div>
+    <div class="mainBackground flex relative top-20 w-full h-20 items-center justify-center">
+        <div id="spacerLine"></div>
+    </div>
 
     <div id="Shadow3" class="stripShadowReverse flex relative top-20 w-full h-20"></div>
 
-    <div id="figuresHeader" class="flex relative top-20 w-full h-96 items-center justify-center">
+    <div id="figuresHeader" class="flex relative top-20 w-full h-96 items-center justify-center transition-all ease-in-out duration-300">
         <h1>KEY FIGURES</h1>
     </div>
 
     <div id="Shadow4" class="stripShadow flex relative top-20 w-full h-20"></div>
 
-    <div id="spacer2" class="mainBackground flex relative top-20 w-full h-10"></div>
+    <div class="mainBackground flex relative top-20 w-full h-20 items-center justify-center">
+        <div id="spacerLine"></div>
+    </div>
+
+    <div id="dwGriffith" class="kfContR">
+        <img id="dwGriffithIMG" src="../Assets/Key Figures/1.DW Griffith.png" alt="DWGriffith" class="kfImgR">
+        <h1 class="kfNameR">D.W. GRIFFITH</h1>
+        <p class="kfParR">Often considered one of the early pioneers of filmmaking, D.W. Griffith directed "The Birth of a Nation" in 1915. While the film is controversial for its content, Griffith's contributions to cinematic techniques, including innovative use of close-ups, cross-cutting, and tracking shots, significantly impacted the art of filmmaking and laid the groundwork for narrative storytelling in cinema.</p>
+    </div>
+
+    <div id="sEisenstein" class="kfContL">
+        <img id="sEisensteinIMG" src="../Assets/Key Figures/2.Sergei Eisenstein.png" alt="SEisenstein" class="kfImgL">
+        <h1 class="kfNameL">SERGEI EISENSTEIN</h1>
+        <p class="kfParL">A Soviet filmmaker and pioneer in the theory and practice of montage, Sergei Eisenstein directed "Battleship Potemkin" in 1925. Eisenstein's use of montage as a powerful storytelling device and his exploration of film as a form of visual rhetoric influenced generations of filmmakers, emphasizing the emotional and intellectual impact of editing on the viewer.</p>
+    </div>
+
+    <div id="aHitchcock" class="kfContR">
+        <img id="aHitchcockIMG" src="../Assets/Key Figures/3.Alfred Hitchcock.png" alt="AHitchcock" class="kfImgR">
+        <h1 class="kfNameR">ALFRED HITCHCOCK</h1>
+        <p class="kfParR">Often referred to as the "Master of Suspense," Alfred Hitchcock was a British filmmaker known for his mastery in suspenseful storytelling and innovative cinematic techniques. His film "Psycho" (1960) not only redefined the horror genre but also showcased Hitchcock's ability to manipulate audience emotions through meticulous framing, editing, and storytelling techniques, leaving an indelible mark on the art of filmmaking.</p>
+    </div>
+
+    <div id="sKubrick" class="kfContL">
+        <img id="sKubrickIMG" src="../Assets/Key Figures/4.Stanley Kubrick.png" alt="SKubrick" class="kfImgL">
+        <h1 class="kfNameL">STANLEY KUBRICK</h1>
+        <p class="kfParL"> Stanley Kubrick, an influential American filmmaker, directed "2001: A Space Odyssey" in 1968. Kubrick's meticulous attention to visual detail, innovative use of special effects, and unconventional storytelling approaches marked a transformative moment in cinematography. His contributions to the art of visual storytelling continue to influence filmmakers across genres.</p>
+    </div>
+
+    <div id="sSpielberg" class="kfContR">
+        <img id="sSpielbergIMG" src="../Assets/Key Figures/5.Steven Spielberg.png" alt="SSpielberg" class="kfImgR">
+        <h1 class="kfNameR">STEVEN SPIELBERG</h1>
+        <p class="kfParR">Steven Spielberg, a prolific American filmmaker, directed "Jaws" in 1975, marking a significant turning point in the history of cinema. Spielberg's mastery of suspense, storytelling, and groundbreaking use of special effects revolutionized the blockbuster film industry. His influence extends beyond his films, as Spielberg played a key role in shaping the modern landscape of Hollywood filmmaking.</p>
+    </div>
+
+    <div id="gLucas" class="kfContL">
+        <img id="gLucasIMG" src="../Assets/Key Figures/6.George Lucas.png" alt="GLucas" class="kfImgL">
+        <h1 class="kfNameL">GEORGE LUCAS</h1>
+        <p class="kfParL">George Lucas, a visionary filmmaker and creator of the "Star Wars" franchise, brought groundbreaking special effects and innovative storytelling techniques to the forefront of videography. The success of "Star Wars" in 1977 not only revolutionized the science fiction genre but also changed the way films were marketed and merchandised, showcasing Lucas's impact on both storytelling and the film industry as a whole.</p>
+    </div>
+
+    <div id="qTarantino" class="kfContR">
+        <img id="qTarantinoIMG" src="../Assets/Key Figures/7.Quentin Tarantino.png" alt="QTarantino" class="kfImgR">
+        <h1 class="kfNameR">QUENTIN TARANTINO</h1>
+        <p class="kfParR">Quentin Tarantino, known for his distinctive storytelling style, nonlinear narratives, and unique dialogue, made a significant impact on modern filmmaking. "Pulp Fiction" (1994) is a landmark film that showcased Tarantino's ability to blend genres and subvert traditional storytelling conventions, influencing a generation of filmmakers and contributing to the evolution of narrative techniques in videography.</p>
+    </div>
+
+    <div id="cNolan" class="kfContL">
+        <img id="cNolanIMG" src="../Assets/Key Figures/8.Christopher Nolan.png" alt="CNolan" class="kfImgL">
+        <h1 class="kfNameL">CHRISTOPHER NOLAN</h1>
+        <p class="kfParL">Christopher Nolan, a British-American filmmaker, has earned acclaim for his intricate narratives, practical effects, and visual storytelling prowess. "Inception" (2010) exemplifies Nolan's ability to merge complex storytelling with innovative visual techniques. His dedication to practical effects and storytelling craftsmanship has left an enduring mark on contemporary videography.</p>
+    </div>
+
+    <div id="aDuVernay" class="kfContR">
+        <img id="aDuvernayIMG" src="../Assets/Key Figures/9.Ava DuVernay.png" alt="ADuVernay" class="kfImgR">
+        <h1 class="kfNameR">AVA DUVERNAY</h1>
+        <p class="kfParR">Ava DuVernay, a trailblazing African American filmmaker, directed "Selma" in 2014, a film that not only portrayed historical events with authenticity but also highlighted DuVernay's commitment to social justice storytelling. Her impact extends beyond her films, as she advocates for diversity and inclusion in the film industry, contributing to a more inclusive and representative videography landscape.</p>
+    </div>
+
+    <div class="mainBackground flex relative top-20 w-full h-20"></div>
 
     <!-- script -->
     <script>
@@ -248,59 +309,89 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
-        $(".step").click( function() {
-        $(this).addClass("active").prevAll().addClass("active");
-        $(this).nextAll().removeClass("active");
-    });
+        $(document).ready(function () {
+            $(".section-content").first().addClass("active");
+        });
 
-    $(".step01").click( function() {
-        $("#line-progress").css("width", "0%");
-        $(".1880s").addClass("active").siblings().removeClass("active");
-    });
+        $(".step").click(function () {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
 
-    $(".step02").click( function() {
-        $("#line-progress").css("width", "10%");
-        $(".1890s").addClass("active").siblings().removeClass("active");
-    });
+        $(".step01").click(function () {
+            $("#line-progress").css("width", "0%");
+            $(".section-content").removeClass("active");
+            $(".1880s").addClass("active");
+        });
 
-    $(".step03").click( function() {
-        $("#line-progress").css("width", "20%");
-        $(".1920s").addClass("active").siblings().removeClass("active");
-    });
+        $(".step02").click(function () {
+            $("#line-progress").css("width", "10%");
+            $(".section-content").removeClass("active");
+            $(".1890s").addClass("active");
+        });
 
-    $(".step04").click( function() {
-        $("#line-progress").css("width", "30%");
-        $(".1930s").addClass("active").siblings().removeClass("active");
-    });
+        $(".step03").click(function () {
+            $("#line-progress").css("width", "20%");
+            $(".section-content").removeClass("active");
+            $(".1920s").addClass("active");
+        });
 
-    $(".step05").click( function() {
-        $("#line-progress").css("width", "40%");
-        $(".1950s").addClass("active").siblings().removeClass("active");
-    });
-    $(".step06").click(function () {
-        $("#line-progress").css("width", "50%");
-        $(".1960s").addClass("active").siblings().removeClass("active");
-    });
-    $(".step07").click(function () {
-        $("#line-progress").css("width", "60%");
-        $(".1970s").addClass("active").siblings().removeClass("active");
-    });
-    $(".step08").click(function () {
-        $("#line-progress").css("width", "70%");
-        $(".1980s").addClass("active").siblings().removeClass("active");
-    });
-    $(".step09").click(function () {
-        $("#line-progress").css("width", "80%");
-        $(".1990s").addClass("active").siblings().removeClass("active");
-    });
-    $(".step10").click(function () {
-        $("#line-progress").css("width", "90%");
-        $(".2000s").addClass("active").siblings().removeClass("active");
-    });
-    $(".step11").click(function () {
-        $("#line-progress").css("width", "100%");
-        $(".PRSNT").addClass("active").siblings().removeClass("active");
-    });
+        $(".step04").click(function () {
+            $("#line-progress").css("width", "30%");
+            $(".section-content").removeClass("active");
+            $(".1930s").addClass("active");
+        });
+
+        $(".step05").click(function () {
+            $("#line-progress").css("width", "40%");
+            $(".section-content").removeClass("active");
+            $(".1950s").addClass("active");
+        });
+
+        $(".step06").click(function () {
+            $("#line-progress").css("width", "50%");
+            $(".section-content").removeClass("active");
+            $(".1960s").addClass("active");
+        });
+
+        $(".step07").click(function () {
+            $("#line-progress").css("width", "60%");
+            $(".section-content").removeClass("active");
+            $(".1970s").addClass("active");
+        });
+
+        $(".step08").click(function () {
+            $("#line-progress").css("width", "70%");
+            $(".section-content").removeClass("active");
+            $(".1980s").addClass("active");
+        });
+
+        $(".step09").click(function () {
+            $("#line-progress").css("width", "80%");
+            $(".section-content").removeClass("active");
+            $(".1990s").addClass("active");
+        });
+
+        $(".step10").click(function () {
+            $("#line-progress").css("width", "90%");
+            $(".section-content").removeClass("active");
+            $(".2000s").addClass("active");
+        });
+
+        $(".step11").click(function () {
+            $("#line-progress").css("width", "100%");
+            $(".section-content").removeClass("active");
+            $(".PRSNT").addClass("active");
+        });
+    </script>
+
+    <script>
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
     </script>
 </body>
 </html>

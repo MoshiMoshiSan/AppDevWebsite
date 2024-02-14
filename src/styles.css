@@ -2,12 +2,6 @@
     background: #1D1D1D;
 }
 
-/* FONTS */
-@font-face {
-    font-family: 'Akira Expanded Demo';
-    src: url('../Assets/Fonts/Akira\ Expanded\ Demo.otf'),
-}
-
 /* FILM STRIP */
 .scroll {
     position: relative;
@@ -121,7 +115,7 @@
     position: relative;
     width: 85%;
     height: 100px;
-    margin-top: 35px;
+    margin-top: 65px;
 }
 
 #progress-bar-container ul {
@@ -297,7 +291,7 @@
 }
 
 #progress-content-section .section-content p {
-    font-family: 'Agency FB';
+    font-family: 'Abel';
     letter-spacing: 0.025em;
 	font-size:30px;
 	color:#dbdbdb;
@@ -334,6 +328,13 @@
 	}
 }
 
+/* spacer things */
+#spacerLine {
+    width: 85%;
+    height: 1px;
+    border: 1px solid #7a7a7a;
+}
+
 /* Key Figures */
 .stripShadowReverse {
     background: linear-gradient(180deg, rgba(29, 29, 29, 0.00) 0%, rgba(0, 0, 0, 0.65) 100%);
@@ -343,11 +344,258 @@
     background-image: url(../Assets/People\ Header.png);
     background-size: cover;
     background-position: center;
+    flex-shrink: 1;
+}
+
+@media (max-width: 500px) {
+    #figuresHeader {
+        background-position: -250px 0px;
+    }
 }
 
 #figuresHeader h1 {
     font-family: 'Akira Expanded Demo';
     font-size: 80px;
+    text-align: center;
     color: red;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+}
+
+@media (max-width: 500px) {
+    #figuresHeader h1 {
+      font-size: 45px;
+    }
+}
+
+/* Key Figures Container */
+.kfContR {
+    display: inline-block;
+    position: relative;
+    top: 80px;
+    padding-left: 50px;
+    width: 100%;
+    height: 384px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 815px) {
+    .kfContR {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: min-content;
+        margin-bottom: 40px;
+    }
+}
+
+.kfContL {
+    display: inline-block;
+    position: relative;
+    top: 80px;
+    padding-right: 50px;
+    width: 100%;
+    height: 384px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 815px) {
+    .kfContL {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: min-content;
+        margin-bottom: 40px;
+    }
+}
+
+.kfImgR {
+    float: right;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kfImgL {
+    float: left;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#dwGriffithIMG {
+    shape-outside: url('../Assets/Key\ Figures/1.DW\ Griffith.png');
+}
+
+#sEisensteinIMG {
+    shape-outside: url('../Assets/Key\ Figures/2.Sergei\ Eisenstein.png');
+}
+
+#aHitchcockIMG {
+    shape-outside: url('../Assets/Key\ Figures/3.Alfred\ Hitchcock.png');
+}
+
+#sKubrickIMG{
+    shape-outside: url('../Assets/Key\ Figures/4.Stanley\ Kubrick.png');
+}
+
+#sSpielbergIMG {
+    shape-outside: url('../Assets/Key\ Figures/5.Steven\ Spielberg.png');
+}
+
+#gLucasIMG {
+    shape-outside: url('../Assets/Key\ Figures/6.George\ Lucas.png');
+}
+
+#qTarantinoIMG {
+    shape-outside: url('../Assets/Key\ Figures/7.Quentin\ Tarantino.png');
+}
+
+#cNolanIMG {
+    shape-outside: url('../Assets/Key\ Figures/8.Christopher\ Nolan.png');
+}
+
+#aDuvernayIMG {
+    shape-outside: url('../Assets/Key\ Figures/9.Ava\ DuVernay.png');
+}
+
+@media (max-width: 815px) {
+    .kfImgR {
+        shape-outside: none;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 815px) {
+    .kfImgL {
+        shape-outside: none;
+        margin-bottom: 20px;
+    }
+}
+
+.kfNameR {
+    font-family: 'Akira Expanded Demo';
+    color: red;
+    font-size: 60px;
+    text-align: right;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    line-height: 55px;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kfParR {
+    font-family: 'Abel';
+    color: #dbdbdb;
+    font-size: 20px;
+    text-align: right;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 1120px) {
+    .kfNameR {
+      font-size: 40px;
+      line-height: 40px;
+    }
+}
+@media (max-width: 925px) {
+    .kfNameR {
+      font-size: 30px;
+      line-height: 30px;
+    }
+}
+
+@media (max-width: 815px) {
+    .kfNameR {
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      margin-right: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .kfParR {
+      font-size: 17px;
+    }
+}
+
+@media (max-width: 850px) {
+    .kfParR {
+      font-size: 15px;
+    }
+}
+
+@media (max-width: 815px) {
+    .kfParR {
+      margin-right: 20px;
+    }
+}
+
+.kfNameL {
+    font-family: 'Akira Expanded Demo';
+    color: red;
+    font-size: 60px;
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    line-height: 55px;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kfParL {
+    font-family: 'Abel';
+    color: #dbdbdb;
+    font-size: 20px;
+    text-align: left;
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 1120px) {
+    .kfNameL {
+      font-size: 40px;
+      line-height: 40px;
+    }
+}
+@media (max-width: 925px) {
+    .kfNameL {
+      font-size: 30px;
+      line-height: 30px;
+    }
+}
+
+@media (max-width: 815px) {
+    .kfNameL {
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .kfParL {
+      font-size: 17px;
+    }
+}
+
+@media (max-width: 850px) {
+    .kfParL {
+      font-size: 15px;
+    }
+}
+
+@media (max-width: 815px) {
+    .kfParL {
+      margin-left: 20px;
+    }
 }
