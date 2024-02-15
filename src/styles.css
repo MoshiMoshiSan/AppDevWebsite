@@ -824,6 +824,13 @@
     padding-right:40px;
 }
 
+@media (max-width: 650px) {
+    .techMCText {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 .techMC h1 {
     font-family: 'Akira Expanded Demo';
     font-size: 5vw;
