@@ -65,7 +65,7 @@
 #tabBar h6 {
     font-family: 'Courier Prime';
     color: white;
-    font-size: 2vw;
+    font-size: 1.3vw;
 }
 
 .glow-text {
@@ -274,10 +274,16 @@
 	position:relative;
 }
 
+@media (max-width: 650px) {
+    #progress-bar-container li {
+        height:50px;
+    }
+}
+
 #progress-bar-container li .step-inner {
 	position:absolute;
 	width:100%;
-	bottom:0;
+	bottom: -0.7vw;
     font-size: 1.8vw;
     transition: font-size 0.3s ease, transform 0.3s ease;
 }
