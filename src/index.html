@@ -9,11 +9,13 @@
 </head>
 
 <body class="mainBackground m-0">
+    <!-- NAV BAR -->
     <div id="navBar" class="flex fixed z-[9999] w-full h-20 px-6 bg-neutral-900 shadow-2xl items-center justify-center sm:justify-start transition-all ease-in-out duration-300">
         <img id="logo" src="../Assets/Icon.png" alt="Icon" class="h-1/2 mr-4 hover:scale-110">
         <h1 class="text-2xl text-white font-['Rubik'] tracking-widest hidden sm:block">THE HISTORY OF VIDEOGRAPHY</h1>
     </div>
 
+    <!-- MOVING STRIP -->
     <div id="topStrip" class="scroll filmStrip relative top-20" style="--t:40s">
         <div>
             <img src="../Assets/Strip.png" alt="Strip">
@@ -79,11 +81,12 @@
         </div>
     </div>
 
+    <!-- TABS -->
     <div id="Shadow1" class="stripShadow hidden relative top-20 w-full h-20 sm:block">
         <div id="tabBar" class="inline-flex w-full h-16 px-2 items-center justify-around">
             <h6 class="glow-text" onclick="scrollToSection('timelineHeader')">Timeline</h6>
             <h6 class="glow-text" onclick="scrollToSection('Shadow3')">Key Figures</h6>
-            <h6 class="glow-text">Technology</h6>
+            <h6 class="glow-text" onclick="scrollToSection('techHeader')">Technology</h6>
             <h6 class="glow-text">Gallery</h6>
             <h6 class="glow-text">Summary</h6>
         </div>
@@ -93,14 +96,46 @@
         <div id="tabBarIcons" class="inline-flex w-full h-16 px-2 items-center justify-around">
             <img class="hover:scale-125" src="../Assets/Clock.png" alt="Clock" onclick="scrollToSection('timelineHeader')">
             <img class="hover:scale-125" src="../Assets/Person.png" alt="Person" onclick="scrollToSection('Shadow3')">
-            <img class="hover:scale-125" src="../Assets/Camera.png" alt="Camera">
+            <img class="hover:scale-125" src="../Assets/Camera.png" alt="Camera" onclick="scrollToSection('techHeader')">
             <img class="hover:scale-125" src="../Assets/Image.png" alt="Image">
             <img class="hover:scale-125" src="../Assets/Paper.png" alt="Paper">
         </div>
     </div>
 
+    <!-- TIMELINE -->
     <div id="timelineHeader" class="flex relative top-20 w-full min-h-24 tmHead:min-h-36 items-center px-5 justify-center transition-all duration-700 ease-in-out">
-        <h1 class="text-[#aaa] text-[35px] tmHead:text-[50px] text-center transition-all duration-300 ease-in-out">The Progression of Videography</h1>
+        <h1 class="text-center transition-all duration-300 ease-in-out">
+            <span class="hoverTextGray">T</span>
+            <span class="hoverTextGray">H</span>
+            <span class="hoverTextGray">E</span>
+            <span class="hoverTextGray">&nbsp;</span>
+            <span class="hoverTextGray">P</span>
+            <span class="hoverTextGray">R</span>
+            <span class="hoverTextGray">O</span>
+            <span class="hoverTextGray">G</span>
+            <span class="hoverTextGray">R</span>
+            <span class="hoverTextGray">E</span>
+            <span class="hoverTextGray">S</span>
+            <span class="hoverTextGray">S</span>
+            <span class="hoverTextGray">I</span>
+            <span class="hoverTextGray">O</span>
+            <span class="hoverTextGray">N</span>
+            <span class="hoverTextGray">&nbsp;</span>
+            <span class="hoverTextGray">O</span>
+            <span class="hoverTextGray">F</span>
+            <br>
+            <span class="hoverTextGray">V</span>
+            <span class="hoverTextGray">I</span>
+            <span class="hoverTextGray">D</span>
+            <span class="hoverTextGray">E</span>
+            <span class="hoverTextGray">O</span>
+            <span class="hoverTextGray">G</span>
+            <span class="hoverTextGray">R</span>
+            <span class="hoverTextGray">A</span>
+            <span class="hoverTextGray">P</span>
+            <span class="hoverTextGray">H</span>
+            <span class="hoverTextGray">Y</span>
+        </h1>
     </div>
 
     <div class="flex relative top-20 mt-16w-full justify-center">
@@ -214,8 +249,21 @@
 
     <div id="Shadow3" class="stripShadowReverse flex relative top-20 w-full h-20"></div>
 
+    <!-- Key Figures -->
     <div id="figuresHeader" class="flex relative top-20 w-full h-96 items-center justify-center transition-all ease-in-out duration-300">
-        <h1>KEY FIGURES</h1>
+        <h1>
+            <span class="hoverTextRed hoverTextRedLG">K</span>
+            <span class="hoverTextRed hoverTextRedLG">E</span>
+            <span class="hoverTextRed hoverTextRedLG">Y</span>
+            <span class="hoverTextRed hoverTextRedLG">&nbsp;</span>
+            <span class="hoverTextRed hoverTextRedLG">F</span>
+            <span class="hoverTextRed hoverTextRedLG">I</span>
+            <span class="hoverTextRed hoverTextRedLG">G</span>
+            <span class="hoverTextRed hoverTextRedLG">U</span>
+            <span class="hoverTextRed hoverTextRedLG">R</span>
+            <span class="hoverTextRed hoverTextRedLG">E</span>
+            <span class="hoverTextRed hoverTextRedLG">S</span>
+        </h1>
     </div>
 
     <div id="Shadow4" class="stripShadow flex relative top-20 w-full h-20"></div>
@@ -278,7 +326,365 @@
         <p class="kfParR">Ava DuVernay, a trailblazing African American filmmaker, directed "Selma" in 2014, a film that not only portrayed historical events with authenticity but also highlighted DuVernay's commitment to social justice storytelling. Her impact extends beyond her films, as she advocates for diversity and inclusion in the film industry, contributing to a more inclusive and representative videography landscape.</p>
     </div>
 
-    <div class="mainBackground flex relative top-20 w-full h-20"></div>
+    <div class="mainBackground flex relative top-20 w-full h-20 items-center justify-center">
+        <div id="spacerLine"></div>
+    </div>
+
+    <div class="mainBackground flex relative top-20 w-full h-16"></div>
+
+    <!-- Technologies -->
+    <div id="techHeader" class="flex relative top-20 w-full items-center">
+        <img src="../Assets/Tech Header.png" alt="techHeader">
+        <h1>
+            <span class="hoverTextRed hoverTextRedSM">T</span>
+            <span class="hoverTextRed hoverTextRedSM">E</span>
+            <span class="hoverTextRed hoverTextRedSM">C</span>
+            <span class="hoverTextRed hoverTextRedSM">H</span>
+            <span class="hoverTextRed hoverTextRedSM">N</span>
+            <span class="hoverTextRed hoverTextRedSM">O</span>
+            <span class="hoverTextRed hoverTextRedSM">L</span>
+            <span class="hoverTextRed hoverTextRedSM">O</span>
+            <span class="hoverTextRed hoverTextRedSM">G</span>
+            <span class="hoverTextRed hoverTextRedSM">I</span>
+            <span class="hoverTextRed hoverTextRedSM">C</span>
+            <span class="hoverTextRed hoverTextRedSM">A</span>
+            <span class="hoverTextRed hoverTextRedSM">L</span>
+            <br>
+            <span class="hoverTextRed hoverTextRedSM">M</span>
+            <span class="hoverTextRed hoverTextRedSM">I</span>
+            <span class="hoverTextRed hoverTextRedSM">L</span>
+            <span class="hoverTextRed hoverTextRedSM">E</span>
+            <span class="hoverTextRed hoverTextRedSM">S</span>
+            <span class="hoverTextRed hoverTextRedSM">T</span>
+            <span class="hoverTextRed hoverTextRedSM">O</span>
+            <span class="hoverTextRed hoverTextRedSM">N</span>
+            <span class="hoverTextRed hoverTextRedSM">E</span>
+            <span class="hoverTextRed hoverTextRedSM">S</span>
+        </h1>
+    </div>
+
+    <!-- Tech Main Body -->
+    <div class="mainBackground flex relative top-20 w-full h-16"></div>
+
+    <div id="Shadow5" class="stripShadowReverse flex relative top-20 w-full h-20"></div>
+
+    <div id="techR1" class="flex relative top-20 w-full">
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR1C1" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+            
+            <div class="absolute techContent">
+                <h1>F</h1>
+                <h1>I</h1>
+                <h1>L</h1>
+                <h1>M</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR1C2" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>S</h1>
+                <h1>O</h1>
+                <h1>U</h1>
+                <h1>N</h1>
+                <h1>D</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR1C3" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>C</h1>
+                <h1>O</h1>
+                <h1>L</h1>
+                <h1>O</h1>
+                <h1>R</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR1C4" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>T</h1>
+                <h1>A</h1>
+                <h1>P</h1>
+                <h1>E</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR1C5" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+            
+            <div class="absolute techContent">
+                <h1>V</h1>
+                <h1>I</h1>
+                <h1>D</h1>
+                <h1>&nbsp;</h1>
+                <h1>C</h1>
+                <h1>A</h1>
+                <h1>M</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex relative top-20 w-full h-10 bg-black"></div>
+
+    <!-- R2 -->
+    <div id="techR2" class="flex relative top-20 w-full">
+        <div class="flex flex-col relative w-[25%] hoverCont">
+            <div id="techR2C1" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>V</h1>
+                <h1>H</h1>
+                <h1>S</h1>
+            </div>
+        </div>
+        
+        <div class="flex flex-col relative w-[25%] hoverCont">
+            <div id="techR2C2" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>C</h1>
+                <h1>A</h1>
+                <h1>M</h1>
+                <h1>C</h1>
+                <h1>O</h1>
+                <h1>R</h1>
+                <h1>D</h1>
+                <h1>E</h1>
+                <h1>R</h1>
+            </div>
+        </div>   
+
+        <div class="flex flex-col relative w-[25%] hoverCont">
+            <div id="techR2C3" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>D</h1>
+                <h1>I</h1>
+                <h1>G</h1>
+                <h1>I</h1>
+                <h1>&nbsp;</h1>
+                <h1>V</h1>
+                <h1>I</h1>
+                <h1>D</h1>
+            </div>
+        </div>   
+
+        <div class="flex flex-col relative w-[25%] hoverCont">
+            <div id="techR2C4" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>E</h1>
+                <h1>D</h1>
+                <h1>I</h1>
+                <h1>T</h1>
+                <h1>I</h1>
+                <h1>N</h1>
+                <h1>G</h1>
+            </div>
+        </div>   
+    </div>
+
+    <div class="flex relative top-20 w-full h-10 bg-black"></div>
+
+    <!-- R3 -->
+    <div id="techR1" class="flex relative top-20 w-full">
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR3C1" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+            
+            <div class="absolute techContent">
+                <h1>D</h1>
+                <h1>V</h1>
+                <h1>D</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR3C2" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>4</h1>
+                <h1>K</h1>
+                <h1>&nbsp;</h1>
+                <h1>H</h1>
+                <h1>D</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR3C3" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>C</h1>
+                <h1>I</h1>
+                <h1>N</h1>
+                <h1>E</h1>
+                <h1>M</h1>
+                <h1>A</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR3C4" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+
+            <div class="absolute techContent">
+                <h1>S</h1>
+                <h1>T</h1>
+                <h1>R</h1>
+                <h1>E</h1>
+                <h1>A</h1>
+                <h1>M</h1>
+            </div>
+        </div>
+
+        <div class="flex flex-col relative w-[20%] hoverCont">
+            <div id="techR3C5" class="flex flex-col relative w-full h-full techImgCont">
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 top-0 techShadowT"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+                <div class="flex absolute w-full h-40 bot-0 techShadowB"></div>
+            </div>
+            
+            <div class="absolute techContent">
+                <h1>3</h1>
+                <h1>6</h1>
+                <h1>0</h1>
+                <h1>&nbsp;</h1>
+                <h1>V</h1>
+                <h1>R</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="Shadow6" class="stripShadow flex relative top-20 w-full h-20"></div>
+
+    <div class="mainBackground flex relative top-20 w-full h-16"></div>
 
     <!-- script -->
     <script>

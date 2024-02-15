@@ -103,9 +103,108 @@
     height: 15px;
 }
 
+/* Hover Text Gray*/
+.hoverTextGray {
+    transition: 0.35s color;
+    color: #555;
+    font-size: 6vw;
+    line-height: 6.5vw;
+}
+
+.hoverTextGray:hover {
+    color: #ffffff;
+}
+
+.hoverTextGray:hover + .hoverTextGray {
+    color: #aaa;
+}
+
+.hoverTextGray:hover + .hoverTextGray + .hoverTextGray {
+    color: #7a7a7a;
+}
+
+.hoverTextGray:has(+ .hoverTextGray:hover) {
+    color: #aaa;
+}
+
+.hoverTextGray:has(+ .hoverTextGray + .hoverTextGray:hover) {
+    color: #7a7a7a;
+}
+
+/* Hover Text Red*/
+.hoverTextRed {
+    transition: 0.35s color;
+    color: #820000;
+}
+
+.hoverTextRedLG {
+    font-size: 9vw;
+    line-height: 9vw;
+}
+
+.hoverTextRedSM {
+    font-size: 6vw;
+    line-height: 6vw;
+}
+
+.hoverTextRed:hover {
+    color: #ff0000;
+}
+
+.hoverTextRed:hover + .hoverTextRed {
+    color: #d50000;
+}
+
+.hoverTextRed:hover + .hoverTextRed + .hoverTextRed {
+    color: #a10000;
+}
+
+.hoverTextRed:has(+ .hoverTextRed:hover) {
+    color: #d50000;
+}
+
+.hoverTextRed:has(+ .hoverTextRed + .hoverTextRed:hover) {
+    color: #a10000;
+}
+
+@media (max-width: 825px) {
+    .hoverTextGray {
+        color: #aaa;
+    }
+    
+    .hoverTextGray:hover {
+        color: #aaa;
+    }
+    
+    .hoverTextGray:hover + .hoverTextGray + .hoverTextGray {
+        color: #aaa;
+    }
+    
+    .hoverTextGray:has(+ .hoverTextGray + .hoverTextGray:hover) {
+        color: #aaa;
+    }
+
+    .hoverTextRed {
+        color:#d50000;
+    }
+
+    .hoverTextRed:hover {
+        color: #d50000;
+    }
+    
+    .hoverTextRed:hover + .hoverTextRed + .hoverTextRed {
+        color: #d50000;
+    }
+    
+    .hoverTextRed:has(+ .hoverTextRed + .hoverTextRed:hover) {
+        color: #d50000;
+    }
+}
+
 /* TIMELINE */
 #timelineHeader h1 {
     font-family: 'Akira Expanded Demo';
+    font-size: 0;
 }
 
 /* Start progress bar */
@@ -335,7 +434,7 @@
     border: 1px solid #7a7a7a;
 }
 
-/* Key Figures */
+/* Key Figures Header */
 .stripShadowReverse {
     background: linear-gradient(180deg, rgba(29, 29, 29, 0.00) 0%, rgba(0, 0, 0, 0.65) 100%);
 }
@@ -344,6 +443,7 @@
     background-image: url(../Assets/People\ Header.png);
     background-size: cover;
     background-position: center;
+    font-size: 0;
     flex-shrink: 1;
 }
 
@@ -355,15 +455,13 @@
 
 #figuresHeader h1 {
     font-family: 'Akira Expanded Demo';
-    font-size: 80px;
     text-align: center;
-    color: red;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
 }
 
-@media (max-width: 500px) {
+@media (max-width: 825px) {
     #figuresHeader h1 {
-      font-size: 45px;
+        color: #d50000;
     }
 }
 
@@ -379,7 +477,7 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 815px) {
+@media (max-width: 825px) {
     .kfContR {
         display: flex;
         position: relative;
@@ -400,7 +498,7 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 815px) {
+@media (max-width: 825px) {
     .kfContL {
         display: flex;
         position: relative;
@@ -460,14 +558,14 @@
     shape-outside: url('../Assets/Key\ Figures/9.Ava\ DuVernay.png');
 }
 
-@media (max-width: 815px) {
+@media (max-width: 825px) {
     .kfImgR {
         shape-outside: none;
         margin-bottom: 20px;
     }
 }
 
-@media (max-width: 815px) {
+@media (max-width: 825px) {
     .kfImgL {
         shape-outside: none;
         margin-bottom: 20px;
@@ -476,126 +574,225 @@
 
 .kfNameR {
     font-family: 'Akira Expanded Demo';
-    color: red;
-    font-size: 60px;
+    color: #d50000;
+    font-size: 4vw;
     text-align: right;
-    margin-top: 70px;
+    margin-top: 45px;
     margin-bottom: 20px;
-    line-height: 55px;
+    line-height: 4vw;
     transition: all;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 825px) {
+    .kfNameR {
+        font-size: 6vw;
+        line-height: 6vw;
+        margin-top: 0px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 .kfParR {
     font-family: 'Abel';
     color: #dbdbdb;
-    font-size: 20px;
+    font-size: 1.8vw;
     text-align: right;
     transition: all;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width: 1120px) {
-    .kfNameR {
-      font-size: 40px;
-      line-height: 40px;
-    }
-}
-@media (max-width: 925px) {
-    .kfNameR {
-      font-size: 30px;
-      line-height: 30px;
-    }
-}
-
-@media (max-width: 815px) {
-    .kfNameR {
-      font-size: 30px;
-      margin-top: 0;
-      margin-bottom: 10px;
-      margin-right: 20px;
-    }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 825px) {
     .kfParR {
-      font-size: 17px;
-    }
-}
-
-@media (max-width: 850px) {
-    .kfParR {
-      font-size: 15px;
-    }
-}
-
-@media (max-width: 815px) {
-    .kfParR {
-      margin-right: 20px;
+        font-size: 3vw;
+        margin-right: 20px;
     }
 }
 
 .kfNameL {
     font-family: 'Akira Expanded Demo';
-    color: red;
-    font-size: 60px;
+    color: #d50000;
+    font-size: 4vw;
     text-align: left;
-    margin-top: 70px;
+    margin-top: 45px;
     margin-bottom: 20px;
-    line-height: 55px;
+    line-height: 4vw;
     transition: all;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 825px) {
+    .kfNameL {
+        font-size: 6vw;
+        line-height: 6vw;
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 .kfParL {
     font-family: 'Abel';
     color: #dbdbdb;
-    font-size: 20px;
+    font-size: 1.8vw;
     text-align: left;
     transition: all;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width: 1120px) {
-    .kfNameL {
-      font-size: 40px;
-      line-height: 40px;
-    }
-}
-@media (max-width: 925px) {
-    .kfNameL {
-      font-size: 30px;
-      line-height: 30px;
-    }
-}
-
-@media (max-width: 815px) {
-    .kfNameL {
-      font-size: 30px;
-      margin-top: 0;
-      margin-bottom: 10px;
-      margin-left: 20px;
-    }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 825px) {
     .kfParL {
-      font-size: 17px;
+        font-size: 3vw;
+        margin-left: 20px;
     }
 }
 
-@media (max-width: 850px) {
-    .kfParL {
-      font-size: 15px;
+/* Technologies */
+#techHeader {
+    height: min-content;
+    font-size: 0;
+}
+
+#techHeader img {
+    width: 45%;
+    height: auto;
+    margin-right: -18vw;
+    filter: blur(2px) grayscale(100%);
+    z-index: 100;
+}
+
+#techHeader h1 {
+    font-family: 'Akira Expanded Demo';
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 150;
+}
+
+@media (max-width: 825px) {
+    #techHeader h1 {
+        color: #d50000;
     }
 }
 
-@media (max-width: 815px) {
-    .kfParL {
-      margin-left: 20px;
+/* Technologies Containers */
+#techR1 {
+    height: min-content;
+}
+
+.techImgCont {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 250%;
+    transition: filter 0.5s;
+    filter: grayscale(100%);
+}
+
+.hoverCont {
+    transition: filter 0.5s, opacity 0.5s;
+}
+
+.hoverCont:hover .techImgCont {
+    filter: grayscale(100%) blur(5px);
+}
+  
+.hoverCont:hover .techContent {
+    opacity: 1;
+}
+
+.techShadowT {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(29, 29, 29, 0.00) 100%);
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.techShadowB {
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0.00) 0%, rgba(0, 0, 0, 0.65) 100%);
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+@media (max-width: 650px) {
+    .techShadowT, .techShadowB {
+        height: 6rem;
     }
+}
+
+@media (max-width: 440px) {
+    .techShadowT, .techShadowB {
+        opacity: 2rem;
+    }
+}
+
+.techContent {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier Prime';
+    font-size: 6vw;
+    line-height: 4.5vw;
+    color: #d50000;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+#techR1C1 {
+    background-image: url(../Assets/Technologies/01.Film\ Camera.jpg);
+}
+
+#techR1C2 {
+    background-image: url(../Assets/Technologies/02.Sound\ on\ Film.jpg);
+}
+
+#techR1C3 {
+    background-image: url(../Assets/Technologies/03.Technicolor\ Film.jpg);
+}
+
+#techR1C4 {
+    background-image: url(../Assets/Technologies/04.Videotapes.jpg);
+}
+
+#techR1C5 {
+    background-image: url(../Assets/Technologies/05.Portable\ Video\ Camera.jpg);
+}
+
+#techR2C1 {
+    background-image: url(../Assets/Technologies/06.VHS.png);
+}
+
+#techR2C2 {
+    background-image: url(../Assets/Technologies/07.Camcorder.jpeg);
+}
+
+#techR2C3 {
+    background-image: url(../Assets/Technologies/08.Digital\ Video.png);
+}
+
+#techR2C4 {
+    background-image: url(../Assets/Technologies/09.Non-Linear\ Editing\ Systems.jpg);
+}
+
+#techR3C1 {
+    background-image: url(../Assets/Technologies/10.DVD.jpg);
+}
+
+#techR3C2 {
+    background-image: url(../Assets/Technologies/11.4k\ Video.jpg);
+}
+
+#techR3C3 {
+    background-image: url(../Assets/Technologies/12.Digital\ Cinema.jpg);
+}
+
+#techR3C4 {
+    background-image: url(../Assets/Technologies/13.Online\ Streaming.jpg);
+}
+
+#techR3C5 {
+    background-image: url(../Assets/Technologies/14.VR.jpg);
 }
