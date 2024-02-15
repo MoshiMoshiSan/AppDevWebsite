@@ -65,7 +65,7 @@
 #tabBar h6 {
     font-family: 'Courier Prime';
     color: white;
-    font-size: 16px;
+    font-size: 2vw;
 }
 
 .glow-text {
@@ -247,7 +247,7 @@
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
 	border:solid 2px #d50000;
 	background: #d50000;
-    scale: 1.20;
+    scale: 1.10;
     transition: transform 0.3s ease;
 }
 
@@ -265,7 +265,7 @@
 	text-align:center;
 	color:#aaa;
 	text-transform:uppercase;
-	font-size:11px;
+	font-size: 1.8vw;
 	cursor:pointer;
 	font-weight:700;
 	transition:all ease 0.2s;
@@ -278,14 +278,8 @@
 	position:absolute;
 	width:100%;
 	bottom:0;
-    font-size: 14px;
+    font-size: 1.8vw;
     transition: font-size 0.3s ease, transform 0.3s ease;
-}
-
-@media (max-width: 990px) {
-    #progress-bar-container li .step-inner {
-      font-size: 10px;
-    }
 }
 
 #progress-bar-container li.active, #progress-bar-container li:hover {
@@ -357,24 +351,19 @@
 #progress-content-section .section-content h2 {
     text-align:center;
     font-family:'Akira Expanded Demo';
-	font-size:80px;
+	font-size: 7vw;
 	text-transform:uppercase;
 	color:#d50000;
     transition: font-size 0.3s ease, transform 0.3s ease;
 }
 
-@media (max-width: 990px) {
-    #progress-content-section .section-content h2 {
-        font-size:34px;
-    }
-}
 
 #progress-content-section .section-content h1 {
     font-family:'Courier New';
     text-decoration: underline;
-    text-underline-offset: 8px;
+    text-underline-offset: 1vw;
     text-decoration-thickness: 2px;
-	font-size: 40px;
+	font-size: 4.5vw;
     font-weight: 550;
     letter-spacing: 2px;
 	text-transform:uppercase;
@@ -383,25 +372,14 @@
     transition: font-size 0.3s ease, transform 0.3s ease;
 }
 
-@media (max-width: 990px) {
-    #progress-content-section .section-content h1 {
-      font-size: 22px;
-    }
-}
-
 #progress-content-section .section-content p {
     font-family: 'Abel';
     letter-spacing: 0.025em;
-	font-size:30px;
+	font-size: 3vw;
 	color:#dbdbdb;
     transition: font-size 0.3s ease, transform 0.3s ease;
 }
 
-@media (max-width: 990px) {
-    #progress-content-section .section-content p {
-      font-size: 18px;
-    }
-}
 
 #progress-content-section .section-content {
 	display:none;

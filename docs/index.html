@@ -11,7 +11,7 @@
 <body class="mainBackground m-0">
     <!-- NAV BAR -->
     <div id="navBar" class="flex fixed z-[9999] w-full h-20 px-6 bg-neutral-900 shadow-2xl items-center justify-center sm:justify-start transition-all ease-in-out duration-300">
-        <img id="logo" src="../Assets/Icon.png" alt="Icon" class="h-1/2 mr-4 hover:scale-110">
+        <img id="logo" src="../Assets/Icon.png" alt="Icon" class="h-1/2 mr-4 hover:scale-110" onclick="scrollToSection('topStrip')">
         <h1 class="text-2xl text-white font-['Rubik'] tracking-widest hidden sm:block">THE HISTORY OF VIDEOGRAPHY</h1>
     </div>
 
@@ -916,17 +916,6 @@
             }
             prevScrollPos = currentScrollPos;
         };
-    </script>
-
-    <script>
-        var scrollToTopButton = document.getElementById('logo');
-
-        // Add a click event listener to the image
-        scrollToTopButton.addEventListener('click', function() {
-            // Scroll the webpage to the top
-            document.body.scrollTop = 0;         // For Safari
-            document.documentElement.scrollTop = 0;  // For Chrome, Firefox, IE, and Opera
-        });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
