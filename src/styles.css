@@ -796,3 +796,51 @@
 #techR3C5 {
     background-image: url(../Assets/Technologies/14.VR.jpg);
 }
+
+/* Tech Main Content */
+.techIMG {
+    width: 100%;
+    overflow: hidden;
+}
+
+.techIMG img {
+    width: 100%;
+    max-height: 50vw;
+    filter: grayscale(100%);
+    box-shadow: 0px 0px 20px #000;
+    transition: filter 0.5s;
+}
+
+.techIMG:hover img {
+    filter: blur(3px) grayscale(100%);
+}
+
+.techIMG:hover .techContent {
+    opacity: 1;
+}
+
+.techMCText {
+    padding-left: 40px;
+    padding-right:40px;
+}
+
+.techMC h1 {
+    font-family: 'Akira Expanded Demo';
+    font-size: 5vw;
+    line-height: 5vw;
+    color: #d50000;
+}
+
+.techMC h2 {
+    font-family: 'Courier Prime';
+    font-size: 2vw;
+    line-height: 2vw;
+    color: #dbdbdb;
+}
+
+.techMC p {
+    font-family: 'Abel';
+    font-size: 2vw;
+    line-height: 2vw;
+    color: #dbdbdb;
+}
