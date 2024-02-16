@@ -424,7 +424,7 @@
 }
 
 #figuresHeader {
-    background-image: url(../Assets/People\ Header.png);
+    background-image: url(./Assets/People\ Header.png);
     background-size: cover;
     background-position: center;
     font-size: 0;
@@ -507,39 +507,39 @@
 }
 
 #dwGriffithIMG {
-    shape-outside: url('../Assets/Key\ Figures/1.DW\ Griffith.png');
+    shape-outside: url('./Assets/Key\ Figures/1.DW\ Griffith.png');
 }
 
 #sEisensteinIMG {
-    shape-outside: url('../Assets/Key\ Figures/2.Sergei\ Eisenstein.png');
+    shape-outside: url('./Assets/Key\ Figures/2.Sergei\ Eisenstein.png');
 }
 
 #aHitchcockIMG {
-    shape-outside: url('../Assets/Key\ Figures/3.Alfred\ Hitchcock.png');
+    shape-outside: url('./Assets/Key\ Figures/3.Alfred\ Hitchcock.png');
 }
 
 #sKubrickIMG{
-    shape-outside: url('../Assets/Key\ Figures/4.Stanley\ Kubrick.png');
+    shape-outside: url('./Assets/Key\ Figures/4.Stanley\ Kubrick.png');
 }
 
 #sSpielbergIMG {
-    shape-outside: url('../Assets/Key\ Figures/5.Steven\ Spielberg.png');
+    shape-outside: url('./Assets/Key\ Figures/5.Steven\ Spielberg.png');
 }
 
 #gLucasIMG {
-    shape-outside: url('../Assets/Key\ Figures/6.George\ Lucas.png');
+    shape-outside: url('./Assets/Key\ Figures/6.George\ Lucas.png');
 }
 
 #qTarantinoIMG {
-    shape-outside: url('../Assets/Key\ Figures/7.Quentin\ Tarantino.png');
+    shape-outside: url('./Assets/Key\ Figures/7.Quentin\ Tarantino.png');
 }
 
 #cNolanIMG {
-    shape-outside: url('../Assets/Key\ Figures/8.Christopher\ Nolan.png');
+    shape-outside: url('./Assets/Key\ Figures/8.Christopher\ Nolan.png');
 }
 
 #aDuvernayIMG {
-    shape-outside: url('../Assets/Key\ Figures/9.Ava\ DuVernay.png');
+    shape-outside: url('./Assets/Key\ Figures/9.Ava\ DuVernay.png');
 }
 
 @media (max-width: 825px) {
@@ -726,59 +726,59 @@
 }
 
 #techR1C1 {
-    background-image: url(../Assets/Technologies/01.Film\ Camera.jpg);
+    background-image: url(./Assets/Technologies/01.Film\ Camera.jpg);
 }
 
 #techR1C2 {
-    background-image: url(../Assets/Technologies/02.Sound\ on\ Film.jpg);
+    background-image: url(./Assets/Technologies/02.Sound\ on\ Film.jpg);
 }
 
 #techR1C3 {
-    background-image: url(../Assets/Technologies/03.Technicolor\ Film.jpg);
+    background-image: url(./Assets/Technologies/03.Technicolor\ Film.jpg);
 }
 
 #techR1C4 {
-    background-image: url(../Assets/Technologies/04.Videotapes.jpg);
+    background-image: url(./Assets/Technologies/04.Videotapes.jpg);
 }
 
 #techR1C5 {
-    background-image: url(../Assets/Technologies/05.Portable\ Video\ Camera.jpg);
+    background-image: url(./Assets/Technologies/05.Portable\ Video\ Camera.jpg);
 }
 
 #techR2C1 {
-    background-image: url(../Assets/Technologies/06.VHS.png);
+    background-image: url(./Assets/Technologies/06.VHS.png);
 }
 
 #techR2C2 {
-    background-image: url(../Assets/Technologies/07.Camcorder.jpeg);
+    background-image: url(./Assets/Technologies/07.Camcorder.jpeg);
 }
 
 #techR2C3 {
-    background-image: url(../Assets/Technologies/08.Digital\ Video.png);
+    background-image: url(./Assets/Technologies/08.Digital\ Video.png);
 }
 
 #techR2C4 {
-    background-image: url(../Assets/Technologies/09.Non-Linear\ Editing\ Systems.jpg);
+    background-image: url(./Assets/Technologies/09.Non-Linear\ Editing\ Systems.jpg);
 }
 
 #techR3C1 {
-    background-image: url(../Assets/Technologies/10.DVD.jpg);
+    background-image: url(./Assets/Technologies/10.DVD.jpg);
 }
 
 #techR3C2 {
-    background-image: url(../Assets/Technologies/11.4k\ Video.jpg);
+    background-image: url(./Assets/Technologies/11.4k\ Video.jpg);
 }
 
 #techR3C3 {
-    background-image: url(../Assets/Technologies/12.Digital\ Cinema.jpg);
+    background-image: url(./Assets/Technologies/12.Digital\ Cinema.jpg);
 }
 
 #techR3C4 {
-    background-image: url(../Assets/Technologies/13.Online\ Streaming.jpg);
+    background-image: url(./Assets/Technologies/13.Online\ Streaming.jpg);
 }
 
 #techR3C5 {
-    background-image: url(../Assets/Technologies/14.VR.jpg);
+    background-image: url(./Assets/Technologies/14.VR.jpg);
 }
 
 /* Tech Main Content */
