@@ -369,8 +369,7 @@
     text-decoration: underline;
     text-underline-offset: 1vw;
     text-decoration-thickness: 2px;
-	font-size: 4.5vw;
-    font-weight: 550;
+	font-size: 4vw;
     letter-spacing: 2px;
 	text-transform:uppercase;
 	color:#dbdbdb;
@@ -381,7 +380,7 @@
 #progress-content-section .section-content p {
     font-family: 'Abel';
     letter-spacing: 0.025em;
-	font-size: 3vw;
+	font-size: 2.5vw;
 	color:#dbdbdb;
     transition: font-size 0.3s ease, transform 0.3s ease;
 }
@@ -440,7 +439,7 @@
 #figuresHeader h1 {
     font-family: 'Akira Expanded Demo';
     text-align: center;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 15)
 }
 
 @media (max-width: 825px) {
@@ -652,7 +651,7 @@
 
 #techHeader h1 {
     font-family: 'Akira Expanded Demo';
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 15);
     z-index: 150;
 }
 
@@ -716,11 +715,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Courier New';
+    font-family: 'Abel';
     font-size: 6vw;
-    line-height: 4.5vw;
+    font-weight: 900;
+    line-height: 5vw;
     color: #d50000;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 15);
+    text-align: center;
     transition: opacity 0.5s;
     opacity: 0;
 }
