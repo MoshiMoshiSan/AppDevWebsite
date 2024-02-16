@@ -87,7 +87,7 @@
             <h6 class="glow-text" onclick="scrollToSection('timelineHeader')">Timeline</h6>
             <h6 class="glow-text" onclick="scrollToSection('Shadow3')">Key Figures</h6>
             <h6 class="glow-text" onclick="scrollToSection('techHeader')">Technology</h6>
-            <h6 class="glow-text">Gallery</h6>
+            <h6 class="glow-text" onclick="scrollToSection('galleryHeader')">Gallery</h6>
             <h6 class="glow-text">Summary</h6>
         </div>
     </div>
@@ -120,10 +120,10 @@
             <span class="hoverTextGray">I</span>
             <span class="hoverTextGray">O</span>
             <span class="hoverTextGray">N</span>
-            <span class="hoverTextGray">&nbsp;</span>
+            <br>
             <span class="hoverTextGray">O</span>
             <span class="hoverTextGray">F</span>
-            <br>
+            <span class="hoverTextGray">&nbsp;</span>
             <span class="hoverTextGray">V</span>
             <span class="hoverTextGray">I</span>
             <span class="hoverTextGray">D</span>
@@ -244,7 +244,7 @@
     </div>
 
     <div class="mainBackground flex relative top-20 w-full h-20 items-center justify-center">
-        <div id="spacerLine"></div>
+        <div class="spacerLine"></div>
     </div>
 
     <div id="Shadow3" class="stripShadowReverse flex relative top-20 w-full h-20"></div>
@@ -269,7 +269,7 @@
     <div id="Shadow4" class="stripShadow flex relative top-20 w-full h-20"></div>
 
     <div class="mainBackground flex relative top-20 w-full h-20 items-center justify-center">
-        <div id="spacerLine"></div>
+        <div class="spacerLine"></div>
     </div>
 
     <div id="dwGriffith" class="kfContR">
@@ -327,7 +327,7 @@
     </div>
 
     <div class="mainBackground flex relative top-20 w-full h-20 items-center justify-center">
-        <div id="spacerLine"></div>
+        <div class="spacerLine"></div>
     </div>
 
     <div class="mainBackground flex relative top-20 w-full h-16"></div>
@@ -689,7 +689,7 @@
     <div id="techMainContent" class="flex flex-col relative top-20 w-full">
         <div id="techMC1" class="flex relative w-full items-center techMC">
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/01.Film Camera.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/01.Film Camera.jpg" alt="Film Camera">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -711,18 +711,16 @@
                 <p>The earliest form of video technology involved film cameras, capturing sequential images on celluloid film. This technology laid the foundation for motion pictures.</p>
             </div>
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/02.Sound on Film.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/02.Sound on Film.jpg" alt="Sound">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
-            </div>
-            
-            
+            </div>   
         </div>
 
         <div id="techMC3" class="flex relative w-full items-center techMC">
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/03.Technicolor Film.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/03.Technicolor Film.jpg" alt="Technicolor">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -743,7 +741,7 @@
                 <p>The invention of videotape enabled the recording and playback of television broadcasts, facilitating the rise of television as a dominant medium and later impacting video production.</p>
             </div>
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/03.Technicolor Film.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/03.Technicolor Film.jpg" alt="Videotape">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -752,7 +750,7 @@
 
         <div id="techMC5" class="flex relative w-full items-center techMC">
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/05.Portable Video Camera.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/05.Portable Video Camera.jpg" alt="Video Camera">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -773,7 +771,7 @@
                 <p>The introduction of the VHS (Video Home System) format allowed consumers to record and watch videos at home, contributing to the growth of the home video market.</p>
             </div>
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/06.VHS.png" alt="Film Cam">
+                <img src="./Assets/Technologies/06.VHS.png" alt="VHS">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -782,7 +780,7 @@
 
         <div id="techMC7" class="flex relative w-full items-center techMC">
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')"> 
-                <img src="./Assets/Technologies/07.Camcorder.jpeg" alt="Film Cam">
+                <img src="./Assets/Technologies/07.Camcorder.jpeg" alt="Camcorder">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -803,7 +801,7 @@
                 <p>The transition to digital video technology marked a significant milestone. Digital video cameras captured and stored footage in digital formats, leading to improvements in image quality and editing flexibility.</p>
             </div>
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/08.Digital Video.png" alt="Film Cam">
+                <img src="./Assets/Technologies/08.Digital Video.png" alt="Digital Video">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -812,7 +810,7 @@
 
         <div id="techMC9" class="flex relative w-full items-center techMC">
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/09.Non-Linear Editing Systems.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/09.Non-Linear Editing Systems.jpg" alt="Editing System">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -833,7 +831,7 @@
                 <p>DVDs (Digital Versatile Discs) provided a new medium for distributing high-quality video content, offering better image and sound quality than VHS tapes.</p>
             </div>
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/10.DVD.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/10.DVD.jpg" alt="DVD">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -842,7 +840,7 @@
 
         <div id="techMC11" class="flex relative w-full items-center techMC">
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/11.4k Video.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/11.4k Video.jpg" alt="4K">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -863,7 +861,7 @@
                 <p>Digital cinema cameras emerged, allowing filmmakers to shoot movies directly in digital formats, leading to changes in production workflows and enabling more cost-effective and efficient filmmaking.</p>
             </div>
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/12.Digital Cinema.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/12.Digital Cinema.jpg" alt="Digital Cinema">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -872,7 +870,7 @@
 
         <div id="techMC13" class="flex relative w-full items-center techMC">
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/13.Online Streaming.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/13.Online Streaming.jpg" alt="Online Streaming">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -893,7 +891,7 @@
                 <p>Technologies like virtual reality and 360° video have brought immersive experiences to the forefront, allowing viewers to engage with content in new and interactive ways.</p>
             </div>
             <div class="flex relative techIMG" onclick="scrollToSection('Shadow5')">
-                <img src="./Assets/Technologies/14.VR.jpg" alt="Film Cam">
+                <img src="./Assets/Technologies/14.VR.jpg" alt="VR">
                 <div class="absolute text-center techContent">
                     <h3>Back to Top</h3>
                 </div>
@@ -902,6 +900,221 @@
     </div>
 
     <div class="flex relative top-20 w-full h-16"></div>
+
+    <div class="mainBackground flex relative top-20 w-full h-20 items-center justify-center">
+        <div class="spacerLine"></div>
+    </div>
+
+    <div class="flex relative top-20 w-full h-16"></div>
+
+    <!-- GALLERY HEADER -->
+    <div id="galleryHeader" class="flex relative top-20 items-center justify-center">
+        <img src="./Assets/Lens.png" alt="Lens">
+        <h1 class="text-center transition-all duration-300 ease-in-out">
+            <span class="hoverTextRed hoverTextRedLG">I</span>
+            <span class="hoverTextRed hoverTextRedLG">C</span>
+            <span class="hoverTextRed hoverTextRedLG">O</span>
+            <span class="hoverTextRed hoverTextRedLG">N</span>
+            <span class="hoverTextRed hoverTextRedLG">I</span>
+            <span class="hoverTextRed hoverTextRedLG">C</span>
+            <span class="hoverTextRed hoverTextRedLG">S</span>
+        </h1>
+    </div>
+
+    <div class="flex relative top-20 w-full h-16"></div>
+
+    <div class="mainBackground flex relative top-20 h-20 items-center justify-center">
+        <div class="spacerLine2"></div>
+    </div>
+
+    <div class="flex relative top-20 w-full h-10"></div>
+
+    <!-- Gallery Body -->
+    <div id="galleryR1" class="flex relative top-20 w-full items-center justify-center">
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/01.Citizen Kane.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Citizen Kane</h1>
+                <h2>(1941)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/02.The Jazz Singer.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>The Jazz Singer</h1>
+                <h2>(1927)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/03.Psycho.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Psycho</h1>
+                <h2>(1960)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/04.2001 - A Space Odyssey.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>2001: A Space Odyssey</h1>
+                <h2>(1968)</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex relative top-20 w-full h-10"></div>
+
+    <div id="galleryR2" class="flex relative top-20 w-full items-center justify-center">
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/05.The Godfather.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>The Godfather</h1>
+                <h2>(1972)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/06.Star Wars - A New Hope.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Star Wars: A New Hope</h1>
+                <h2>(1977)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/07.Blade Runner.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Blade Runner</h1>
+                <h2>(1982)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/08.E.T..mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>E.T. the Extra-Terrestrial</h1>
+                <h2>(1982)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/09.The Terminator.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>The Terminator</h1>
+                <h2>(1984)</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex relative top-20 w-full h-10"></div>
+
+    <div id="galleryR3" class="flex relative top-20 w-full items-center justify-center">
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/10.Pulp Fiction.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Pulp Fiction</h1>
+                <h2>(1994)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/11.The Matrix.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>The Matrix</h1>
+                <h2>(1999)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/12.Amélie.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Amélie</h1>
+                <h2>(2001)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/13.Crouching Tiger, Hidden Dragon.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Crouching Tiger, Hidden Dragon</h1>
+                <h2>(2000)</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex relative top-20 w-full h-10"></div>
+
+    <div id="galleryR4" class="flex relative top-20 w-full items-center justify-center px-2">
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/14.Avatar.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Avatar</h1>
+                <h2>(2009)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/15.Birdman.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Birdman</h1>
+                <h2>(2014)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/16.Mad Max - Fury Road.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Mad Max: Fury Road</h1>
+                <h2>(2015)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/17.La La Land.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>La La Land</h1>
+                <h2>(2016)</h2>
+            </div>
+        </div>
+        <div class="galleryCard" onmouseover="unmuteVideo(this)" onmouseout="muteVideo(this)">
+            <video autoplay muted loop>
+                <source src="./Assets/Gallery/18.EEAAO.mp4" type="video/mp4">
+            </video>
+            <div class="galleryInfo">
+                <h1>Everything Everywhere All At Once</h1>
+                <h2>(2022)</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex relative top-20 w-full h-10"></div>
+
+    <div class="mainBackground flex relative top-20 h-20 items-center justify-center">
+        <div class="spacerLine2"></div>
+    </div>
 
     <!-- script -->
     <script>
@@ -1041,5 +1254,16 @@
         }
     </script>
   
+    <script>
+        function unmuteVideo(card) {
+            const video = card.querySelector('video');
+            video.muted = false;
+        }
+
+        function muteVideo(card) {
+            const video = card.querySelector('video');
+            video.muted = true;
+        }
+    </script>
 </body>
 </html>

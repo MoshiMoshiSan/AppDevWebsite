@@ -205,6 +205,7 @@
 #timelineHeader h1 {
     font-family: 'Akira Expanded Demo';
     font-size: 0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 15);
 }
 
 /* Start progress bar */
@@ -411,8 +412,14 @@
 }
 
 /* spacer things */
-#spacerLine {
+.spacerLine {
     width: 85%;
+    height: 1px;
+    border: 1px solid #7a7a7a;
+}
+
+.spacerLine2 {
+    width: 95%;
     height: 1px;
     border: 1px solid #7a7a7a;
 }
@@ -835,4 +842,73 @@
     font-size: 2vw;
     line-height: 2vw;
     color: #dbdbdb;
+}
+
+/* Gallery Header */
+#galleryHeader img {
+    width: 30%;
+    height: auto;
+}
+
+#galleryHeader h1 {
+    position: absolute;
+    font-family: 'Akira Expanded Demo';
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 15);
+}
+
+@media (max-width: 825px) {
+    #galleryHeader h1 {
+        color: #d50000;
+    }
+}
+
+/* Gallery Body */
+.galleryCard {
+    border-radius: 20px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 12.5vw;
+    flex: 1;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #8b8b8b;
+    display: flex;
+    position: relative;
+}
+
+.galleryCard video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Crop the video to fit the container */
+}
+
+.galleryCard:hover {
+    flex: 2;
+}
+
+.galleryInfo {
+    position: absolute;
+    bottom: 1vw;
+    padding-left: 1vw;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.galleryInfo h1{
+    font-family: 'Akira Expanded Demo';
+    font-size: 1vw;
+    color: #d50000;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 15);
+}
+
+.galleryInfo h2{
+    font-family: 'Abel';
+    font-weight: 900;
+    font-size: 0.8vw;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 15);
+}
+
+.galleryCard:hover .galleryInfo {
+    opacity: 0;
 }
