@@ -63,7 +63,7 @@
 }
 
 #tabBar h6 {
-    font-family: 'Courier Prime';
+    font-family: 'Courier New';
     color: white;
     font-size: 1.3vw;
 }
@@ -716,7 +716,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Courier Prime';
+    font-family: 'Courier New';
     font-size: 6vw;
     line-height: 4.5vw;
     color: #d50000;
@@ -823,7 +823,7 @@
 }
 
 .techMC h2 {
-    font-family: 'Courier Prime';
+    font-family: 'Courier New';
     font-size: 2vw;
     line-height: 2vw;
     color: #dbdbdb;
