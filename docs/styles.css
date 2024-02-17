@@ -864,7 +864,7 @@
 
 /* Gallery Body */
 .galleryCard {
-    border-radius: 20px;
+    border-radius: 2vw;
     margin-left: 1vw;
     margin-right: 1vw;
     height: 12.5vw;
@@ -894,7 +894,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.galleryInfo h1{
+.galleryInfo h1 {
     font-family: 'Akira Expanded Demo';
     font-size: 1vw;
     color: #d50000;
