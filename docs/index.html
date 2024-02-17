@@ -1378,12 +1378,11 @@
         
             // Show the selected techMC
             const selectedTechMC = document.getElementById(techId);
-            const scrollTo = document.getElementById('techContentPoint')
             if (selectedTechMC) {
                 selectedTechMC.style.display = 'flex';
         
                 // Scroll to the selected techMC
-                scrollTo.scrollIntoView({ behavior: 'smooth' });
+                selectedTechMC.scrollIntoView({ behavior: 'smooth' });
             }
         }
     </script>
